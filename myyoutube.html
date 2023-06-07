@@ -1,1 +1,61 @@
-
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatable" content="IE=edge">
+        <title>CursedGrove</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, inital-scale">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                margin: 0;
+                padding: 0;
+            }
+    
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            h1 {
+                text-align: center;
+            }
+    
+            .video {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            .video iframe {
+                margin: 10px;
+                width: 300px;
+                height: 200px;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <img class="logo" src="images/icons8-anonymous-mask-32.png" alt="logo" onclick="window.location.href='index.html'">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>            </nav>
+            <a class="cta" href="#"><button>contact</button></a>
+        </header>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1Vsk7i82bOQ" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mB5_ZF-R-1s" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h2uGAYbl9bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- Add more iframe elements for each video you want to display -->
+        </div>
+    </body>
+</html>
