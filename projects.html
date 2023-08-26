@@ -5,18 +5,26 @@
         <title>CursedGrove</title>
         <link rel="icon" type="image/x-icon" href="/images/icon-512.png">
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, inital-scale">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
     <header>
         <img class="logo" src="images/color.png" alt="logo" onclick="window.location.href='index.html'">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="myyoutube.html">Videos</a></li>
-            </ul>            </nav>
+            <!-- Toggle Button -->
+            <!-- Toggle Button -->
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle Navigation">☰</button>
+
+            <!-- Navigation Links Container -->
+            <div id="navLinksContainer" class="nav-links-container">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="youtube.html">Videos</a></li>
+                    </ul>
+                </nav>
+            </div>
             <a class="cta" href="contact.html"><button>contact</button></a>
         </header>
         <h6>
@@ -25,5 +33,6 @@
         <img src="/images/Screenshot_2023-08-24_22-34-45.png" class="project1">
         <a class="randomizerproj1" href="https://1drv.ms/u/c/c139b39f3b8145e1/EdQJRhrfBxlHij7IBFso-3EBO6KulqFH142YCoeOZMWCaA?e=uFrpKo"><button>Download</button></a>
         <p3>*Linux .deb only*</p3>
+        <script src="main.js"> </script>
     </body>
 </html>

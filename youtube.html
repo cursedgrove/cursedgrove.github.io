@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatable" content="IE=edge">
+        <title>CursedGrove</title>
+        <link rel="icon" type="image/x-icon" href="/images/icon-512.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .container {
+                max-width: auto;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #111111;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            h1 {
+                text-align: center;
+            }
+    
+            .video {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            .video iframe {
+                margin: 10px;
+                width: 300px;
+                height: 200px;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <img class="logo" src="images/color.png" alt="logo" onclick="window.location.href='index.html'">
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle Navigation">☰</button>
+
+        <!-- Navigation Links Container -->
+        <div id="navLinksContainer" class="nav-links-container">
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+        </div>
+            <a class="cta" href="contact.html"><button>contact</button></a>
+        </header>
+    <div class="container">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1Vsk7i82bOQ" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mB5_ZF-R-1s" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h2uGAYbl9bQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="main.js"> </script>
+    </body>
+</html>

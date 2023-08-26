@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="/images/icon-512.png">
-    <meta name="viewport" content="width=device-width, inital-scale">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <img class="logo" src="images/color.png" alt="logo"
             onclick="window.location.href='index.html'">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="myyoutube.html">Videos</a></li>
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle Navigation">☰</button>
 
-            </ul>
-        </nav>
+            <!-- Navigation Links Container -->
+            <div id="navLinksContainer" class="nav-links-container">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="youtube.html">Videos</a></li>
+                    </ul>
+                </nav>
+            </div>
         <a class="cta" href="contact.html"><button>contact</button></a>
     </header>
     <iframe
@@ -118,6 +121,14 @@
     } else if (window.attachEvent) {
       window.attachEvent("onmessage", handleIFrameMessage);
     }
+    document.getElementById("navToggle").addEventListener("click", function() {
+    const navLinksContainer = document.getElementById("navLinksContainer");
+    if (navLinksContainer.style.display === "none" || navLinksContainer.style.display === "") {
+        navLinksContainer.style.display = "block";
+    } else {
+        navLinksContainer.style.display = "none";
+    }
+});
     </script>    
 </body>
 </html>

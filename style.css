@@ -110,6 +110,28 @@ h4 {
     color: white;
     margin: 20px 0px 20px;
     font-size: 75px;
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    60% {
+        letter-spacing: 25px;
+        margin-bottom: -50px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -5px;
+    }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
 }
 
 h3 {
@@ -122,6 +144,7 @@ h3 {
 
 p {
     text-align: Center;
+    animation: fadeIn 2s;
     font-size: 25px;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -129,29 +152,110 @@ p {
 
 h5 {
     text-align: center;
-
+    animation: fadeIn 2s;
     color: white;
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
+    animation: fadeIn 2s;
+
     text-align: center;
 }
 
 h6 {
+    animation: fadeIn 2s;
     text-align: center;
     font-size: 100px;
     color: white;
 }
 .project1{
+    animation: fadeIn 2s;
     margin-left: 450px;
     align-items: center;
     height: 400px;
+    max-width: 100%;
 }
 .randomizerproj1 {
     margin-left: 650px;
 }
 p3 {
     color: white;
+}
+@media screen and (max-width: 768px) {
+    .nav__links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Styles for screens with a max width of 480px (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+    .nav__links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav__links li {
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .project1 {
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .randomizerproj1 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+/* Hide navigation links on mobile by default */
+@media screen and (max-width: 768px) {
+    .nav-links-container {
+        display: none;
+        background-color: #24252A;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        background-color: #24252A;
+        border: 2px solid #edf0f1;
+        border-radius: 5px;
+        font-size: 24px;
+        color: #edf0f1;
+        cursor: pointer;
+        padding: 10px 15px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .nav-toggle:hover {
+        background-color: #edf0f1;
+        color: #24252A;
+    }
+
+    .nav__links li {
+        margin: 10px 0;
+    }
+}
+
+/* Hide the toggle button on larger screens */
+@media screen and (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
 }

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatable" content="IE=edge">
     <title>CursedGrove</title>
     <link rel="icon" type="image/x-icon" href="/images/icon-512.png">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, inital-scale">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,21 +13,23 @@
     <header>
         <img class="logo" src="images/color.png" alt="logo"
             onclick="window.location.href='index.html'">
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">projects</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="myyoutube.html">Videos</a></li>
+            <button id="navToggle" class="nav-toggle" aria-label="Toggle Navigation">☰</button>
 
-            </ul>
-        </nav>
+            <!-- Navigation Links Container -->
+            <div id="navLinksContainer" class="nav-links-container">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="youtube.html">Videos</a></li>
+                    </ul>
+                </nav>
+            </div>
         <a class="cta" href="contact.html"><button>contact</button></a>
     </header>
     <div class="content">
         <h4>Welcome Travelers</h4>
-        <h3> I am a Gamer & Developer</h3>
     </div>
+    <script src="main.js"> </script>
 </body>
-
 </html>
